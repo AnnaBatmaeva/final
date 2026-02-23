@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("../assets/fonts/DarkerGrotesque-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+a {
+  color: inherit;          
+  text-decoration: none;   
+}
+
+button {
+    border: none;
+}
+
+.content {
+    width: 1200px;
+    height: 100%;
+    max-width: 1200px;
+}

@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 22px;
+    z-index: 100;
+    background-color: rgb(41, 41, 41);
+
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding-right: 25px;
+
+    &__item {
+        font-size: 21px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+
+        &:hover {
+            color: rgb(209, 209, 209);
+        }
+    }
+
+    &__iconProfile {
+        width: 24px;
+        height: 24px;
+        margin-top: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.logo {
+    padding-left: 30px;
+
+    &__img {
+        width: 100px;
+        height: auto;
+    }
+
+
+}
+
+.active {
+    color: rgb(209, 209, 209);
+    font-weight: 700;
+}

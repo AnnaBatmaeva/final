@@ -1,0 +1,157 @@
+.introBlock {
+    color: white;
+    background-color: #330505;
+    text-transform: uppercase;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 23px;
+
+    &__sneakersLeft {
+        width: 90px;
+        height: auto;
+    }
+
+    &__sneakersRight {
+        width: 90px;
+        height: auto;
+        transform: scaleX(-1) rotate(35deg);
+        margin-bottom: -10px;
+    }
+}
+
+.salesBlock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #fafafa;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+
+        &__item {
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+            cursor: pointer;
+
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+            span,
+            .content {
+                position: relative;
+                z-index: 2;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.6);
+                transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            &:hover {
+                transform: scale(1.04);
+
+                &::after {
+                    background: rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            .title {
+                font-size: 45px;
+                font-weight: 800;
+                margin-bottom: 15px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                opacity: 0.85;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .button {
+                width: 100%;
+                margin-top: 10px;
+                padding: 14px 28px;
+                border: none;
+                border-radius: 10px;
+                background: white;
+                color: black;
+                font-weight: 600;
+                cursor: pointer;
+                font-size: 20px;
+
+                transition: transform 0.3s ease, background 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    background: #f2f2f2;
+                }
+            }
+        }
+
+        &__big {
+            grid-row: 1 / 3;
+            height: 540px;
+        }
+
+        .club {
+            background-image: url(../../assets/sales/club.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .winter {
+            background-image: url(../../assets/sales/winter.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sport {
+            background-image: url(../../assets/sales/sport.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .summer {
+            background-image: url(../../assets/sales/summer.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .brand {
+            background-image: url(../../assets/sales/brand.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+}

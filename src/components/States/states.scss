@@ -1,0 +1,41 @@
+.container-loader {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0.85;
+}
+
+.mui-circular-progress {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  justify-self: center;
+  position: fixed;
+  top: 42%;
+
+  border: 4px solid transparent;
+  border-top-color: #1976d2;
+  border-right-color: #1976d2;
+
+  animation: mui-rotate 1.4s linear infinite;
+    z-index: 101;
+
+}
+
+@keyframes mui-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

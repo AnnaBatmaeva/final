@@ -1,0 +1,83 @@
+.heroBlock {
+    margin-top: -1px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.joinClubBlock {
+    background-image: url("../../assets/join-club.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 52vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+}
+
+.joinClubContentBlock {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: 30px;
+            gap: 10px;
+            font-size: 50px;
+
+
+            h2 {
+                font-weight: 800;
+            }
+
+            h3 {
+                font-weight: 600;
+                margin-top: -35px;
+            }
+
+        }
+
+        .socialMedia {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: 30px;
+            gap: 10px;
+            color: #fafafa;
+
+            h2 {
+                font-weight: 400;
+                font-size: 40px;
+                margin-right: 15px;
+            }
+
+            .icons {
+                margin-left: 10px;
+                width: 45px;
+                height: 45px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,34 @@
+.newColectionBlock {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #fafafa;
+}
+
+.titles {
+    display: flex;
+    padding-bottom: 20px;
+
+    &__newColection {
+        text-transform: uppercase;
+        font-size: 26px;
+    }
+
+    &__goToNewColection {
+        margin-left: auto;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 18px;
+    }
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 15px;
+
+}
